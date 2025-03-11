@@ -1,9 +1,9 @@
-# gh-actions-demo
+# workflows-demo
 
-[![Starter](https://github.com/tmx-kenmotsu/gh-actions-demo/actions/workflows/starter.yml/badge.svg)](https://github.com/tmx-kenmotsu/gh-actions-demo/actions/workflows/starter.yml)
-[![Starter (Reusable)](https://github.com/tmx-kenmotsu/gh-actions-demo/actions/workflows/starter-reusable.yml/badge.svg)](https://github.com/tmx-kenmotsu/gh-actions-demo/actions/workflows/starter-reusable.yml)
-[![Release](https://github.com/tmx-kenmotsu/gh-actions-demo/actions/workflows/release.yml/badge.svg)](https://github.com/tmx-kenmotsu/gh-actions-demo/actions/workflows/release.yml)
-[![Action Lint](https://github.com/tmx-kenmotsu/gh-actions-demo/actions/workflows/actionlint.yml/badge.svg)](https://github.com/tmx-kenmotsu/gh-actions-demo/actions/workflows/actionlint.yml)
+[![Starter](https://github.com/tmx-kenmotsu/workflows-demo/actions/workflows/starter.yml/badge.svg)](https://github.com/tmx-kenmotsu/workflows-demo/actions/workflows/starter.yml)
+[![Starter (Reusable)](https://github.com/tmx-kenmotsu/workflows-demo/actions/workflows/starter-reusable.yml/badge.svg)](https://github.com/tmx-kenmotsu/workflows-demo/actions/workflows/starter-reusable.yml)
+[![Release](https://github.com/tmx-kenmotsu/workflows-demo/actions/workflows/release.yml/badge.svg)](https://github.com/tmx-kenmotsu/workflows-demo/actions/workflows/release.yml)
+[![Action Lint](https://github.com/tmx-kenmotsu/workflows-demo/actions/workflows/actionlint.yml/badge.svg)](https://github.com/tmx-kenmotsu/workflows-demo/actions/workflows/actionlint.yml)
 
 ## ここは
 
