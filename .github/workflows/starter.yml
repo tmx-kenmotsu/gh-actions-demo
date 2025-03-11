@@ -10,9 +10,6 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-    defaults:
-      run:
-        shell: cmd
     timeout-minutes: 60
     steps:
     - uses: actions/checkout@v4.2.2
@@ -23,6 +20,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
+      shell: cmd
       run: build.bat
     - name: Upload Build Artifacts
       if: success()
@@ -34,9 +32,6 @@ jobs:
   static-analysis:
     needs: build
     runs-on: self-hosted
-    defaults:
-      run:
-        shell: cmd
     permissions:
       checks: write
     timeout-minutes: 60
@@ -49,6 +44,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Static Analysis with SpotBugs
+      shell: cmd
       run: static-analysis.bat
     - name: Publish Test Report
       if: always()
@@ -65,9 +61,6 @@ jobs:
   unit-test:
     needs: static-analysis
     runs-on: self-hosted
-    defaults:
-      run:
-        shell: cmd
     permissions:
       checks: write
     timeout-minutes: 60
@@ -80,6 +73,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Unit Test with JUnit
+      shell: cmd
       run: unit-test.bat
     - name: Publish Test Reports
       if: always()
