@@ -27,12 +27,6 @@ jobs:
       with:
         name: build-artifacts
         path: '**/*.jar'
-    # - uses: tlolkema/simple-teams-message@1.1.0
-    #   if: always()
-    #   with:
-    #     message_title: "title"
-    #     message_description: "description"
-    #     webhook: ${{ secrets.TEAMS_WEBHOOK }}
 
   static-analysis:
     needs: build

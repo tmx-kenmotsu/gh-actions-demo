@@ -4,9 +4,9 @@
 [![Release](https://github.com/tmx-kenmotsu/gh-actions-demo/actions/workflows/release.yml/badge.svg)](https://github.com/tmx-kenmotsu/gh-actions-demo/actions/workflows/release.yml)
 [![Action Lint](https://github.com/tmx-kenmotsu/gh-actions-demo/actions/workflows/actionlint.yml/badge.svg)](https://github.com/tmx-kenmotsu/gh-actions-demo/actions/workflows/actionlint.yml)
 
-## 何
+## ここは
 
-GitHub Actionsのデモ環境です。
+GitHub Actionsのスターターパッケージのデモ環境です。
 
 ## 利用ツール
 
