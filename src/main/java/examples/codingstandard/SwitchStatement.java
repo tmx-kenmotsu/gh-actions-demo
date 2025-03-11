@@ -9,6 +9,9 @@ public class SwitchStatement {
             case 1:
                 System.out.println ("One");
                 break;
+            default:
+                System.out.println ("Other");
+                break;
         }
     }
 }
