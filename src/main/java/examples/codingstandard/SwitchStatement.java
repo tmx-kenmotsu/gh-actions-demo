@@ -6,9 +6,6 @@ public class SwitchStatement {
             case 0:
                 System.out.println ("Zero");
                 break;
-            case 1:
-                System.out.println ("One");
-                break;
         }
     }
 }
