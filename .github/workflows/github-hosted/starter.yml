@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
     - uses: actions/checkout@v4.2.2
@@ -20,7 +20,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: build.bat
+      run: ./build.sh
     - name: Upload Build Artifacts
       if: success()
       uses: actions/upload-artifact@v4.6.0
@@ -30,7 +30,7 @@ jobs:
 
   static-analysis:
     needs: build
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     permissions:
       checks: write
     timeout-minutes: 60
@@ -43,7 +43,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Static Analysis with SpotBugs
-      run: static-analysis.bat
+      run: ./static-analysis.sh
     - name: Publish Test Report
       if: always()
       uses: jwgmeligmeyling/spotbugs-github-action@v1.2
@@ -58,7 +58,7 @@ jobs:
 
   unit-test:
     needs: static-analysis
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     permissions:
       checks: write
     timeout-minutes: 60
@@ -71,7 +71,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Unit Test with JUnit
-      run: unit-test.bat
+      run: ./unit-test.sh
     - name: Publish Test Reports
       if: always()
       uses: mikepenz/action-junit-report@v5.2.0
