@@ -10,7 +10,9 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-    shell: cmd
+    defaults:
+      run:
+        shell: cmd
     timeout-minutes: 60
     steps:
     - uses: actions/checkout@v4.2.2
@@ -32,7 +34,9 @@ jobs:
   static-analysis:
     needs: build
     runs-on: self-hosted
-    shell: cmd
+    defaults:
+      run:
+        shell: cmd
     permissions:
       checks: write
     timeout-minutes: 60
@@ -61,7 +65,9 @@ jobs:
   unit-test:
     needs: static-analysis
     runs-on: self-hosted
-    shell: cmd
+    defaults:
+      run:
+        shell: cmd
     permissions:
       checks: write
     timeout-minutes: 60
